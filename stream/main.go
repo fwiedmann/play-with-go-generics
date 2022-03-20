@@ -13,8 +13,8 @@ func main() {
 	stringIds := Map(idsInt, intToString)
 	fmt.Printf("%v", stringIds)
 
-	resp := Filter(idsInt, func(t int) bool {
-		return t != 1
+	resp := Filter(stringIds, func(t string) bool {
+		return t != "1"
 	})
 	fmt.Printf("%v", resp)
 }
